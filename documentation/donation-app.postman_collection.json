@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "7d9426f4-8660-4d06-916d-652525f82ce3",
+		"name": "donation-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29650187",
+		"_collection_link": "https://bold-crater-398133.postman.co/workspace/First-One~08b85efe-3c53-4b07-965f-cab641a2ddd9/collection/29650187-7d9426f4-8660-4d06-916d-652525f82ce3?action=share&source=collection_link&creator=29650187"
+	},
+	"item": [
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"String123_\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\" : \"user@example.com\",\r\n  \"newPassword\": \"User123_\",\r\n  \"confirmNewPassword\": \"User123_\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth/reset-password",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"user@example.com\",\r\n    \"otp\":\"000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth/check-otp",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth",
+								"check-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth/forgot-password",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fisrtName\": \"string\",\r\n  \"lastName\": \"string\",\r\n  \"userName\": \"string\",\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"String123_\",\r\n  \"confirmPassword\": \"String123_\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hello",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://donation-project.runasp.net/api/auth",
+							"protocol": "https",
+							"host": [
+								"donation-project",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"auth"
+							]
+						},
+						"description": "welcome message"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
